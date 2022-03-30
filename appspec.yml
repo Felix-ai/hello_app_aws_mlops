@@ -11,4 +11,4 @@ files:
 hooks:
   ApplicationStart:
     - location: ./installApp.sh
-      timeout: 300
+      timeout: 20
