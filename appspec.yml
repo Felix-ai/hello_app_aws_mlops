@@ -11,4 +11,4 @@ permissions:
 hooks:
   ApplicationStart:
     - location: ./installApp.sh
-      timeout: 20
+      timeout: 300
