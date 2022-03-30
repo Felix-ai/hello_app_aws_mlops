@@ -3,7 +3,13 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: docker
 hooks:
   ApplicationStart:
     - location: ./installApp.sh
       timeout: 300
+      runas: ec2-user
