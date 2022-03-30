@@ -3,11 +3,11 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user
-# permissions:
-#   - object: /
-#     pattern: "**"
-#     user:
-#     group: docker
+permissions:
+  - object: /
+    pattern: "**"
+    # user: ec2-user
+    group: docker
 hooks:
   ApplicationStart:
     - location: ./installApp.sh
