@@ -1,0 +1,20 @@
+version: 1
+task_definition:
+  task_execution_role: ecsTaskExecutionRole
+  ecs_network_mode: awsvpc
+  task_size:
+    mem_limit: 0.5GB
+    cpu_limit: 256
+  services:
+    web:
+        repository_credentials: 
+            credentials_parameter: "<SECRET_ARN>"
+run_params:
+  network_configuration:
+    awsvpc_configuration:
+      subnets:
+        - "<SUB_1_ID>"
+        - "<SUB_2_ID>"
+      security_groups:
+        - "<SG_ID>"
+      assign_public_ip: ENABLED
