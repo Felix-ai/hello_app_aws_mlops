@@ -1,2 +1,2 @@
 #!/bin/bash
-docker ps
+sudo docker ps
