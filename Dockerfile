@@ -11,7 +11,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get -y update && apt-get install -y apache2
 
 # Copy message.py to local folder
-RUN echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
+RUN echo "<h1>Hello world from $(hostname -f)!</h1>" > /var/www/html/index.html
 
 # Start the server
 CMD ["apachectl", "-D", "FOREGROUND"]
