@@ -19,17 +19,17 @@ version: 0.2
 #     - variable
 #   secrets-manager:
 #     key: secret-id:json-key:version-stage:version-id
-#     AWS_DEFAULT_REGION: "hello-app:AWS_DEFAULT_REGION"
-#     DOCKER_USERNAME: "hello-app:DOCKER_USERNAME"
-#     AWS_ACCOUNT_ID: "hello-app:AWS_ACCOUNT_ID"
-#     IMAGE_REPO_NAME: "hello-app:IMAGE_REPO_NAME"
-#     IMAGE_TAG: "hello-app:IMAGE_TAG"
-#     CLIENT_PORT: "hello-app:CLIENT_PORT"
-#     DOCKER_PORT: "hello-app:DOCKER_PORT"
-#     DOCKER_ENV1_KEY: "hello-app:DOCKER_ENV1_KEY"
-#     DOCKER_ENV1_VALUE: "hello-app:DOCKER_ENV1_VALUE"
-#     DOCKER_ENV2_KEY: "hello-app:DOCKER_ENV2_KEY"
-#     DOCKER_ENV2_VALUE: "hello-app:DOCKER_ENV2_VALUE"
+#     AWS_DEFAULT_REGION: "dev/hello_app:AWS_DEFAULT_REGION"
+#     DOCKER_USERNAME: "dev/hello_app:DOCKER_USERNAME"
+#     AWS_ACCOUNT_ID: "dev/hello_app:AWS_ACCOUNT_ID"
+#     IMAGE_REPO_NAME: "dev/hello_app:IMAGE_REPO_NAME"
+#     IMAGE_TAG: "dev/hello_app:IMAGE_TAG"
+#     CLIENT_PORT: "dev/hello_app:CLIENT_PORT"
+#     DOCKER_PORT: "dev/hello_app:DOCKER_PORT"
+#     DOCKER_ENV1_KEY: "dev/hello_app:DOCKER_ENV1_KEY"
+#     DOCKER_ENV1_VALUE: "dev/hello_app:DOCKER_ENV1_VALUE"
+#     DOCKER_ENV2_KEY: "dev/hello_app:DOCKER_ENV2_KEY"
+#     DOCKER_ENV2_VALUE: "dev/hello_app:DOCKER_ENV2_VALUE"
 #   git-credential-helper: no | yes
 
 phases:
