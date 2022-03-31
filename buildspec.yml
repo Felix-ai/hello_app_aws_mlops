@@ -1,5 +1,37 @@
 version: 0.2
 
+env:
+  # parameter-store:
+  #   key: "value"
+  #   AWS_DEFAULT_REGION: "AWS_DEFAULT_REGION"
+  #   DOCKER_USERNAME: "DOCKER_USERNAME"
+  #   AWS_ACCOUNT_ID: "AWS_ACCOUNT_ID"
+  #   IMAGE_REPO_NAME: "IMAGE_REPO_NAME"
+  #   IMAGE_TAG: "IMAGE_TAG"
+  #   CLIENT_PORT: "CLIENT_PORT"
+  #   DOCKER_PORT: "DOCKER_PORT"
+  #   DOCKER_ENV1_KEY: "DOCKER_ENV1_KEY"
+  #   DOCKER_ENV1_VALUE: "DOCKER_ENV1_VALUE"
+  #   DOCKER_ENV2_KEY: "DOCKER_ENV2_KEY"
+  #   DOCKER_ENV2_VALUE: "DOCKER_ENV2_VALUE"
+  # exported-variables:
+  #   - variable
+  #   - variable
+  secrets-manager:
+    # key: secret-id:json-key:version-stage:version-id
+    AWS_DEFAULT_REGION: "hello-app:AWS_DEFAULT_REGION"
+    DOCKER_USERNAME: "hello-app:DOCKER_USERNAME"
+    AWS_ACCOUNT_ID: "hello-app:AWS_ACCOUNT_ID"
+    IMAGE_REPO_NAME: "hello-app:IMAGE_REPO_NAME"
+    IMAGE_TAG: "hello-app:IMAGE_TAG"
+    CLIENT_PORT: "hello-app:CLIENT_PORT"
+    DOCKER_PORT: "hello-app:DOCKER_PORT"
+    DOCKER_ENV1_KEY: "hello-app:DOCKER_ENV1_KEY"
+    DOCKER_ENV1_VALUE: "hello-app:DOCKER_ENV1_VALUE"
+    DOCKER_ENV2_KEY: "hello-app:DOCKER_ENV2_KEY"
+    DOCKER_ENV2_VALUE: "hello-app:DOCKER_ENV2_VALUE"
+  # git-credential-helper: no | yes
+
 phases:
   install:
     runtime-versions:
