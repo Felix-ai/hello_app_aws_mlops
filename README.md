@@ -1,2 +1,2 @@
 # Hello app 
-Demo AWS MLops workflow
+AWS MLops workflow
