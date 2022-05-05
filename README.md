@@ -2,7 +2,7 @@
 AWS Lambda MLops workflow
 
 ## Run it locally
-docker run -d -p 8080:8080 docker-lambda
+docker run -d -p xxxx:8080 xxxx
 
 ## Test your application locally using the runtime interface emulator
-curl -XPOST "http://localhost:8080/2015-03-31/functions/function/invocations" -d '{"payload":"hello world!"}'
+curl -XPOST "http://localhost:xxxx/2015-03-31/functions/function/invocations" -d '{"payload":"hello world!"}'
