@@ -8,10 +8,10 @@ LABEL AUTHOR "Felix-ai"
 # RUN apt-get -y update
 
 # Install python
-RUN pip install --user pymsteams
+RUN pip3 install --user pymsteams
 
 # Copy teams_message.py to task root directory
-ADD teams_message.py ${LAMBDA_TASK_ROOT}
+ADD teams_message.py ${LAMBDA_TASK_ROOT} --target "${LAMBDA_TASK_ROOT}"
 
 # Run using python
 CMD ["teams_message.lambda_handler"]
