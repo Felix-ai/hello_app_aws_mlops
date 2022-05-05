@@ -1,2 +1,2 @@
 # Hello app 
-AWS MLops workflow
+AWS ECS MLops workflow
