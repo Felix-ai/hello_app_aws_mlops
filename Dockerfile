@@ -1,17 +1,18 @@
 # Fetch Ubuntu image
-FROM public.ecr.aws/lts/ubuntu:latest
+FROM public.ecr.aws/lambda/python:3.8
 
 # Maintainer
 LABEL AUTHOR "Felix-ai"
 
-# Turn off questions
-ARG DEBIAN_FRONTEND=noninteractive
-
 # Update and install packages you need
-RUN apt-get -y update && apt-get install -y apache2
+RUN apt-get -y update
 
-# Copy message.py to local folder
-RUN echo "<h1>Hello world from $(hostname -f)!</h1>" > /var/www/html/index.html
+# Install python
+RUN pip install --user pymsteams
 
-# Start the server
-CMD ["apachectl", "-D", "FOREGROUND"]
+# Copy teams_message.py to task root directory
+ADD teams_message.py ${LAMBDA_TASK_ROOT}
+
+# Run using python
+CMD ["teams_message.lambda_handler"]
+# ENTRYPOINT ["python3.8"]
