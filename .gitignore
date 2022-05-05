@@ -30,4 +30,4 @@ rsconnect/
 __pycache__
 
 .vs/
-app/teams-message.py
+server.py
