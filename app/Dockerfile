@@ -8,7 +8,8 @@ LABEL AUTHOR "Felix-ai"
 # RUN apt-get -y update
 
 # Install python
-RUN pip3 install --user --target "${LAMBDA_TASK_ROOT}" pymsteams
+RUN pip3 install --user pymsteams
+# RUN pip3 install --target "${LAMBDA_TASK_ROOT}" pymsteams
 
 # Copy teams_message.py to task root directory
 ADD teams_message.py ${LAMBDA_TASK_ROOT}
