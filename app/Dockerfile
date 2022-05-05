@@ -5,7 +5,7 @@ FROM public.ecr.aws/lambda/python:3.8
 LABEL AUTHOR "Felix-ai"
 
 # Update and install packages you need
-RUN apt-get -y update
+# RUN apt-get -y update
 
 # Install python
 RUN pip install --user pymsteams
