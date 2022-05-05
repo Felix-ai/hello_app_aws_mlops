@@ -7,7 +7,7 @@ def lambda_handler(event, context):
 
 
     # Add text to the message.
-    myTeamsMessage.text("DockerAWS TEST: Happy day <at>[Data _Science](df585377.groups.absa.africa@za.teams.ms)</at>!")
+    
 
     # send the message.
     return {'statusCode': 200,
